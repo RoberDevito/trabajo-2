@@ -1,0 +1,260 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    margin: 0;
+}
+
+h2{
+    margin: 0;
+}
+
+.barra {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #b13535;
+    color: white;
+    z-index: 10;
+    padding: 0px 2rem;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin: 5px;
+}
+
+.barra ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    align-items: center; 
+    font-size: 18px;
+    padding-left: 2rem;
+}
+
+.barra li {
+    color: white;
+    transition: font-size 0.3s;
+}
+
+.barra li:hover{
+    font-size: 20px;
+}
+
+.barra a {
+    color: #fff;
+    text-decoration: none; 
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.barra a:hover {
+    color: #333;
+}
+
+.agrtarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    gap: 5px;
+}
+
+.tareas{
+    padding: 20px;
+}
+
+.columnas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+}
+
+.columna{
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.tit{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+input{
+    margin: 0;
+}
+
+.carta{
+    background-color:#ffffff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.3s;
+}
+
+.carta p{
+ margin-top: 10px;
+}
+
+.carta:hover{
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.2);
+}
+
+.lapizfoto{
+    height: 20px;
+}
+
+.enunciado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vencimiento p{
+    margin-top: 10px;
+    color: #2c2727;
+}
+
+.uno{
+    border-left: 5px solid #d42020;
+}
+
+.dos{
+    border-left: 5px solid #2ec419;
+}
+
+.tres{
+    border-left: 5px solid #d42020;
+}
+
+.cuatro{
+    border-left: 5px solid #dbd817;
+}
+
+.cinco{
+    border-left: 5px solid #dbd817;
+}
+
+.seis{
+    border-left: 5px solid #d42020;
+}
+
+.siete{
+    border-left: 5px solid #dbd817;
+}
+
+.ocho{
+    border-left: 5px solid #2ec419;
+}
+
+.nueve h2{
+    text-decoration: line-through;
+    color: #b8b8b8;
+}
+
+.diez h2{
+    text-decoration: line-through;
+    color: #b8b8b8;
+}
+
+.once h2{
+    text-decoration: line-through;
+    color: #b8b8b8;
+}
+
+.doce h2{
+    text-decoration: line-through;
+    color: #b8b8b8;
+}
+.text{
+    text-decoration: line-through;
+    color: #b8b8b8;
+}
+
+footer {
+    background-color: #b13535;
+    color: white;
+    text-align: center;
+    padding: 2.9rem;
+    margin-top: auto;
+}
+
+.links {
+    margin-bottom: 0.5rem;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+@media (max-width: 768px) {
+
+    .barra {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .barra ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding-left: 0;
+    }
+
+    .barra a {
+        font-size: 18px;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .columnas {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .carta {
+        padding: 1rem;
+    }
+
+    footer {
+        padding: 1.5rem;
+    }
+
+    footer .links a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .agrtarea{
+        flex-direction: column;
+    }
+}
